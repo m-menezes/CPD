@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CPD Menu</name>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Abril 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.13</version>
+	<description>Este módulo exibe um menu estilo bootstrap no site.</description>
+	<files>
+		<filename module="mod_cpd_menu">mod_cpd_menu.php</filename>
+		<folder>tmpl</folder>
+		<folder>assets/css</folder>
+		<folder>assets/js</folder>
+		<filename>helper.php</filename>
+	</files>
+	<languages>
+		<language tag="pt-BR">pt-BR.mod_cpd_menu.ini</language>
+	</languages>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="menutype"
+					type="menu"
+					label="MOD_MENU_FIELD_MENUTYPE_LABEL"
+					description="MOD_MENU_FIELD_MENUTYPE_DESC"
+					/>
+
+					<field
+						name="base"
+						type="menuitem"
+						label="MOD_MENU_FIELD_ACTIVE_LABEL"
+						description="MOD_MENU_FIELD_ACTIVE_DESC"
+						>
+						<option value="">JCURRENT</option>
+					</field>
+
+					<field
+						name="startLevel"
+						type="list"
+						label="MOD_MENU_FIELD_STARTLEVEL_LABEL"
+						description="MOD_MENU_FIELD_STARTLEVEL_DESC"
+						default="1"
+						>
+						<option value="1">J1</option>
+						<option value="2">J2</option>
+						<option value="3">J3</option>
+						<option value="4">J4</option>
+						<option value="5">J5</option>
+						<option value="6">J6</option>
+						<option value="7">J7</option>
+						<option value="8">J8</option>
+						<option value="9">J9</option>
+						<option value="10">J10</option>
+					</field>
+					<field
+						name="endLevel"
+						type="list"
+						label="MOD_MENU_FIELD_ENDLEVEL_LABEL"
+						description="MOD_MENU_FIELD_ENDLEVEL_DESC"
+						default="0"
+						>
+						<option value="0">JALL</option>
+						<option value="1">J1</option>
+						<option value="2">J2</option>
+						<option value="3">J3</option>
+						<option value="4">J4</option>
+						<option value="5">J5</option>
+						<option value="6">J6</option>
+						<option value="7">J7</option>
+						<option value="8">J8</option>
+						<option value="9">J9</option>
+						<option value="10">J10</option>
+					</field>
+					<field
+						name="showAllChildren"
+						type="radio"
+						label="MOD_MENU_FIELD_ALLCHILDREN_LABEL"
+						description="MOD_MENU_FIELD_ALLCHILDREN_DESC"
+						class="btn-group btn-group-yesno"
+						default="1"
+						>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+
+					<field
+						name="colunas_submenu1"
+						type="list"
+						label="MOD_SUBMENU1_COL"
+						description="MOD_SUBMENU_COL_DESC"
+						default="4"
+						>
+						<option value="1">J1</option>
+						<option value="2">J2</option>
+						<option value="3">J3</option>
+						<option value="4">J4</option>
+						<option value="5">J5</option>
+						<option value="6">J6</option>
+						<option value="7">J7</option>
+						<option value="8">J8</option>
+						<option value="9">J9</option>
+						<option value="10">J10</option>
+						<option value="11">J11</option>
+						<option value="12">J12</option>
+					</field>
+					<field
+						name="colunas_submenu2"
+						type="list"
+						label="MOD_SUBMENU2_COL"
+						description="MOD_SUBMENU_COL_DESC"
+						default="12"
+						>
+						<option value="1">1</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5</option>
+						<option value="6">6</option>
+						<option value="7">7</option>
+						<option value="8">8</option>
+						<option value="9">9</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</field>
+				</fieldset>
+				<fieldset name="css" label="CSS">
+					<field 
+						name="note_mainmenu" 
+						type="note" 
+						class="alert alert-info" 
+						label="Propriedades Main-menu" 
+						>
+					</field>
+					<field
+						name="back_barra_menu"
+						type="radio"
+						label="Barra menu toda página:"
+						description="Background da barra menu cobrindo a largura da página."
+						class="btn-group btn-group-yesno"
+						default="1"
+						>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+					<field 
+						name="back_color_menu" 
+						type="color" 
+						default=""
+						label="Background Menu."
+						description="Cor do background do menu."
+						>
+					</field>
+					<field 
+						name="fonte_color_menu" 
+						type="color" 
+						default=""
+						description="Cor da fonte do Menu."
+						label="Fonte"
+						>
+					</field>
+					<field 
+						name="hover_color_menu" 
+						type="color" 
+						default=""
+						label="Hover Background"
+						description="Cor do hover e active do menu."
+						>
+					</field>
+					<field 
+						name="fonte_hover_menu" 
+						type="color" 
+						default=""
+						label="Hover Fonte"
+						description="Cor da fonte quando Mouseover Menu."
+						>
+					</field>
+					<!-- SUB MENU -->
+					<field 
+						name="note_submenu" 
+						type="note" 
+						class="alert alert-info" 
+						label="Propriedades Sub-menu" 
+						>
+					</field>
+					<field
+						name="back_sub_menu"
+						type="radio"
+						label="Sub menu toda página:"
+						description="Background do submenu cobrindo a largura da página."
+						class="btn-group btn-group-yesno"
+						default="1"
+						>
+						<option value="1">JYES</option>
+						<option value="0">JNO</option>
+					</field>
+					<field 
+						name="back_color_submenu" 
+						type="color" 
+						default=""
+						description="Cor do background do Sub-menu."
+						label="Background Sub-Menu."
+						>
+					</field>
+					<field 
+						name="fonte_color_submenu" 
+						type="color" 
+						default=""
+						description="Cor da fonte do Sub-menu."
+						label="Fonte"
+						>
+					</field>
+					<field 
+						name="fonte_hover_submenu" 
+						type="color" 
+						default=""
+						description="Cor da fonte quando Mouseover Sub-menu."
+						label="Hover Fonte"
+						>
+					</field>
+				</fieldset>
+				<fieldset name="advanced">
+					<field
+						name="tag_id"
+						type="text"
+						label="MOD_MENU_FIELD_TAG_ID_LABEL"
+						description="MOD_MENU_FIELD_TAG_ID_DESC"
+						>
+					</field>
+				</fieldset>
+			</fields>
+		</config>
+	</extension>

@@ -1,0 +1,96 @@
+/*CORES BASE AMARELO: #FF0 	*/
+body{
+	background: #000 !important;
+	color:#ffffff !important;
+}
+.row{
+	background: #000 !important;
+}
+.site-header,
+#limit{
+	background: transparent !important;
+}
+p{
+	color: #ffffff !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a{
+	color:#FF0 !important;
+}
+a:focus, a:hover {
+	color: #FF0 !important;
+}
+#btn-busca,
+.nav-bar-main {
+	color: #FF0 !important;
+	background: #2f2f2f !important;
+	border: 1px solid #fff;
+}
+footer{
+	background-color: #000000 !important;
+}
+#abusca{
+	background-color: #000000 !important;
+	border:1px solid #fff!important;
+}
+.cat-list-row0{
+	background: #000000 !important;
+}
+.btn.hasTooltip{
+	color:#000 !important;
+}
+.chzn-results,.chzn-container a, .chzn-container span{
+	color: #000 !important;
+}
+.cbp-hrsub{
+	background: #2f2f2f !important;
+}
+/*BARRA ACESSIBILIDADE*/
+.list-item span {
+	background-color: #FFF !important;
+	color: black !important;
+}
+/*FIM BARRA ACESSIBILIDADE*/
+ul.inside_menu,
+.navbar-default {
+	background: #2f2f2f !important;
+	background-color: #2f2f2f !important;
+}
+.navbar-default{
+	border-bottom: 3px solid #FF0 !important;
+}
+.cbp-hropen,
+.cbp-hropen a,
+.cbp-hrmenu > ul > li.active a,
+.cbp-hrmenu > ul > li a:focus,
+.cbp-hrmenu > ul > li a:hover {
+	background: transparent !important;
+	color:#FF0 !important;
+}
+
+.footer-widget > h4 {
+	color:#FFF !important;
+}
+.site-footer{
+	border-top:3px solid #FF0 !important;
+}
+.ufsmLogo{
+	border-color: #FFFFFF !important;
+}
+span.title {
+    color: #FF0 !important;
+}
+.right_mega {
+    background: #2f2f2f !important;
+}
+#barra-acessibilidade{
+    border-top: 0px;
+}
+.textVisual p{
+	background: #2f2f2f!important;
+}

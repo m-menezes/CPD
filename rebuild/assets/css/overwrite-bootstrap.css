@@ -1,0 +1,19 @@
+div#menu-container.container{
+  padding:0;
+}
+
+
+.btn-default{
+  text-shadow:none;
+  background-image:none;
+  border:0px solid #f26531;
+  height:34px;
+}
+
+body{
+  font:13px/23px Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing:antialiased;
+}
+form.navbar-form.search_form {
+    padding: 0px !important;
+}

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CPD Footer</name>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Junho 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.19</version>
+	<description>Modulo para inclusão de conteúdo no footer do site.</description>
+	<files>
+		<filename module="mod_cpd_footer">mod_cpd_footer.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="footerTitle"
+					type="text"
+					default=""
+					label="Titulo">
+				</field>	
+				<field 
+					name="nota"
+					type="note"
+					default=""
+					label="Conteúdo">
+				</field>
+				<field 
+					name="footerLine_1"
+					type="text"
+					label="Linha 1">
+				</field>
+				<field 
+					name="footerLine_2"
+					type="text"
+					label="Linha 2">
+				</field>
+				<field 
+					name="footerLine_3"
+					type="text"
+					label="Linha 3">
+				</field>
+				<field 
+					name="footerLine_4"
+					type="text"
+					label="Linha 4">
+				</field>
+				<field 
+					name="footerLine_5"
+					type="text"
+					label="Linha 5">
+				</field>
+				<field 
+					name="footerLine_6"
+					type="text"
+					label="Linha 6">
+				</field>
+				<field 
+					name="footerLine_7"
+					type="text"
+					label="Linha 7">
+				</field>
+				<field 
+					name="footerLine_8"
+					type="text"
+					label="Linha 8">
+				</field>
+				<field 
+					name="footerLine_9"
+					type="text"
+					label="Linha 9">
+				</field>
+				<field 
+					name="footerLine_10"
+					type="text"
+					label="Linha 10">
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CPD Sociais</name>
+	<description>Módulo apresentação icones com link redes sociais.</description>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Abril 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.13</version>
+	<files>
+		<filename module="mod_cpd_social">mod_cpd_social.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- TEXTO -->
+				<field 
+					name="color"
+					type="color"
+					default="#000000"
+					label="Cor Titulo"
+					description=""				
+					>
+				</field>
+				<field
+					name="icon_px"
+					type="text"
+					default="25px"
+					label="Tamanho icone"
+					description="Tamanho em px, % ou auto."
+					>
+				</field>
+				<field 
+					name="facebook"
+					type="radio"
+					label="Facebook"
+					description="Exibir icone facebook"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="facebook_url"
+					type="url"
+					default="#"
+					label="URL facebook"
+					description="Cole o link do facebook, Ex.: http://facebook.com/exemplo"
+					showon="facebook:1"
+					>
+				</field>
+				<field 
+					name="twitter"
+					type="radio"
+					label="Twitter"
+					description="Exibir icone twitter"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="twitter_url"
+					type="url"
+					default="#"
+					label="Url twitter"
+					showon="twitter:1"
+					description="Cole o link do twitter, Ex.: http://twitter.com/exemplo"
+					>
+				</field>
+				<field 
+					name="gmail"
+					type="radio"
+					label="Gmail"
+					description="Exibir icone gmail"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="gmail_url"
+					type="url"
+					default="#"
+					label="Url gmail"
+					showon="gmail:1"
+					description="Cole o link do gmail, Ex.: http://gmail.com/exemplo"
+					>
+				</field>
+				<field 
+					name="instagram"
+					type="radio"
+					label="Instagram"
+					description="Exibir icone instagram"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="instagram_url"
+					type="url"
+					default="#"
+					label="Url instagram"
+					showon="instagram:1"
+					description="Cole o link do instagram, Ex.: http://instagram.com/exemplo"
+					>
+				</field>
+								<field 
+					name="googleplus"
+					type="radio"
+					label="Google Plus"
+					description="Exibir icone googleplus"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="googleplus_url"
+					type="url"
+					default="#"
+					label="Url Google+"
+					showon="googleplus:1"
+					description="Cole o link do googleplus, Ex.: http://plus.google.com/exemplo"
+					>
+				</field>
+				<field 
+					name="linkedin"
+					type="radio"
+					label="Linkedin"
+					description="Exibir icone linkedin"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="linkedin_url"
+					type="url"
+					default="#"
+					label="Url Linkedin"
+					showon="linkedin:1"
+					description="Cole o link do linkedin, Ex.: http://linkedin.com/exemplo"
+					>
+				</field>
+				<field 
+					name="youtube"
+					type="radio"
+					label="Youtube"
+					description="Exibir icone youtube"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>				
+				<field 
+					name="youtube_url"
+					type="url"
+					default="#"
+					label="Url Youtube"
+					showon="youtube:1"
+					description="Cole o link do youtube, Ex.: http://youtube.com/exemplo"
+					>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

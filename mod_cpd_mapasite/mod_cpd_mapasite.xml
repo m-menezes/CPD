@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CPD SiteMap</name>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Maio 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.13</version>
+	<description>Modulo para inclusão do mapa do site.</description>
+	<files>
+		<filename module="mod_cpd_mapasite">mod_cpd_mapasite.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+			</fieldset>
+		</fields>
+	</config>
+</extension>

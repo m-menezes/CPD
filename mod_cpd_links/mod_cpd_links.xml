@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CPD Links</name>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Junho 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.13</version>
+	<description>Modulo para inclusão de links no padrão UFSM</description>
+	<files>
+		<filename module="mod_cpd_links">mod_cpd_links.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- TEXTO -->
+				<field name="note0" type="note" class="alert alert-info" label="Para inserir apenas texto deixe o label de URL em branco" description="" />
+				<field
+					name="right_mega1" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0">
+				</field>
+				<field 
+					name="linkNome1"
+					type="text"
+					default=""
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL1"
+					type="text"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon1" 
+					type="list"
+					default="" 
+					label="Selecione um Icone"
+					description="">
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note1" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 1 -->
+				<field name="newLink2" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega2" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink2:1"
+					>
+				</field>
+				<field 
+					name="linkNome2"
+					type="text"
+					default=""
+					showon="newLink2:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL2"
+					type="text"
+					showon="newLink2:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon2" 
+					type="list" 
+					default="" 
+					showon="newLink2:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note2" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 2 -->
+				<field name="newLink3" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega3" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink3:1"
+					>
+				</field>
+				<field 
+					name="linkNome3"
+					type="text"
+					default=""
+					showon="newLink3:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL3"
+					type="text"
+					showon="newLink3:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon3" 
+					type="list" 
+					default="" 
+					showon="newLink3:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note3" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 3 -->
+				<field name="newLink4" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega4" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink4:1"
+					>
+				</field>
+				<field 
+					name="linkNome4"
+					type="text"
+					default=""
+					showon="newLink4:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL4"
+					type="text"
+					showon="newLink4:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon4" 
+					type="list" 
+					default="" 
+					showon="newLink4:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note4" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 4 -->
+				<field name="newLink5" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega5" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink5:1"
+					>
+				</field>
+				<field 
+					name="linkNome5"
+					type="text"
+					default=""
+					showon="newLink5:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL5"
+					type="text"
+					showon="newLink5:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon5" 
+					type="list" 
+					default="" 
+					showon="newLink5:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note5" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 5 -->
+				<field name="newLink6" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega6" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink6:1"
+					>
+				</field>
+				<field 
+					name="linkNome6"
+					type="text"
+					default=""
+					showon="newLink6:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL6"
+					type="text"
+					showon="newLink6:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon6" 
+					type="list" 
+					default="" 
+					showon="newLink6:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note6" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 6 -->
+				<field name="newLink7" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega7" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink7:1"
+					>
+				</field>
+				<field 
+					name="linkNome7"
+					type="text"
+					default=""
+					showon="newLink7:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL7"
+					type="text"
+					showon="newLink7:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon7" 
+					type="list" 
+					default="" 
+					showon="newLink7:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note7" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 7 -->
+				<field name="newLink8" 
+					type="radio" 
+					default="0" 
+					label="Adicionar novo link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field
+					name="right_mega8" 
+					type="checkbox" 
+					label="Backgroung Link" 
+					description="Adicionar background no link"
+					value="1"
+					default="0"
+					showon="newLink8:1"
+					>
+				</field>
+				<field 
+					name="linkNome8"
+					type="text"
+					default=""
+					showon="newLink8:1"
+					label="Texto do Link">
+				</field>
+				<field 
+					name="linkURL8"
+					type="text"
+					showon="newLink8:1"
+					label="URL do Link">
+				</field>
+				<field name="linkIcon8" 
+					type="list" 
+					default="" 
+					showon="newLink8:1"
+					label="Selecione um Icone" 
+					>
+					<option value="fa fa-envelope-open-o">Envelope Open</option>
+					<option value="fa fa-pencil-square-o">Pencil Square</option>
+					<option value="fa fa-check-square-o">Check Square</option>
+					<option value="fa fa-television">Television</option>
+					<option value="fa fa-tasks">Tasks</option>
+					<option value="fa fa-gavel">Gavel</option>
+					<option value="fa fa-link">Link</option>
+				</field>
+				<field name="note8" type="note" class="alert alert-info" label=" " description="" />
+				<!-- FIM ELEMENTO 8 -->
+			</fieldset>
+		</fields>
+	</config>
+</extension>

@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>UFSM Logo</name>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Abril 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.13</version>
+	<description>Modulo para inclusão do logotipo na página.</description>
+	<files>
+		<filename module="mod_ufsm_logo">mod_ufsm_logo.php</filename>
+		<folder>tmpl</folder>
+		<folder>images</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<!-- TEXTO -->
+				<field 
+					name="color_text" 
+					type="color" 
+					default="000000"
+					label="Cor da Fonte"
+					>
+				</field>
+				<field 
+					name="showSecundario"
+					type="radio"
+					label="Exibir nome secundário"
+					class="btn-group btn-group-yesno"
+					default="0"
+					>
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
+				<field 
+					name="nomePrincipal"
+					type="textarea"
+					default=""
+					label="Nome Principal"
+					description="Texto principal ao lado do logo da UFSM"
+					rows="3"
+					cols="10"
+					>
+				</field>
+				<field 
+					name="nomeSecundario"
+					type="textarea"
+					default=""
+					label="Nome Secundário"
+					description="Texto secundário ao lado do logo da UFSM"
+					rows="3"
+					cols="10"
+					showon="showSecundario:1"
+					>
+				</field>
+				<field 
+					name="paddingTop"
+					type="textarea"
+					default=""
+					label="Padding top"
+					rows="3"
+					cols="10"
+					>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+</extension>

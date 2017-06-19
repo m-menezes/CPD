@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install PUBLIC "-//Joomla! 1.5//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/1.5/template-install.dtd">
+<extension version="3.1" type="template" client="site">
+	<name>Rebuild</name>
+	<creationDate>26/05/2017</creationDate>
+	<author>Marcelo Menezes</author>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<copyright></copyright>
+	<license>UFSML</license>
+	<version>17.6.13</version>
+	<description>Template Padrão da UFSM (05/2017)</description>
+	<files>
+        <folder>assets</folder>
+        <filename>index.php</filename>
+        <filename>favicon.ico</filename>
+        <filename>templateDetails.xml</filename>
+    </files>
+	<positions>
+      	<position>idioma</position>
+        <position>logo</position>
+		<position>topo</position>
+      	<position>topo-container</position>
+		<position>menu</position>
+		<position>breadcrumb</position>
+		<position>centro</position>
+		<position>direita</position>
+		<position>esquerda</position>
+		<position>debug</position>
+		<position>footer1</position>
+		<position>footer2</position>
+        <position>noticias</position>
+        <position>mapasite</position>
+        <position>position1</position>
+        <position>position2</position>
+        <position>position3</position>
+	</positions>
+</extension>
+
