@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="3.1" client="site" method="upgrade">
+	<name>CPD Facebook</name>
+	<author>Marcelo Menezes S.</author>
+	<creationDate>Maio 2017</creationDate>
+	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
+	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
+	<version>17.6.22</version>
+	<description>Modulo para inclusão do iframe Facebook.</description>
+	<files>
+		<filename module="mod_cpd_facebook">mod_cpd_facebook.php</filename>
+		<folder>tmpl</folder>
+		<filename>helper.php</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field 
+					name="facebookURL"
+					type="text"
+					default="https://www.facebook.com/facebook"
+					label="URL do Facebook">
+				</field>
+				<field 
+					name="dataWidth"
+					type="text"
+					label="Width"
+					default="445"
+					filter="integer">
+				</field>
+				<field 
+					name="dataHeight"
+					type="text"
+					label="Height"
+					default="500"
+					filter="integer">
+				</field>
+				<field 
+					name="publicacoes"
+					type="radio"
+					label="Publicações"
+					description="Exibir publicações"
+					class="btn-group btn-group-yesno"
+					default="timeline"
+					>
+					<option value="false">JNO</option>
+					<option value="timeline">JYES</option>
+				</field>
+			</fieldset>
+
+
+		</fields>
+	</config>
+</extension>

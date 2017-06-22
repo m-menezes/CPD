@@ -46,6 +46,16 @@
 <jdoc:include type="head" />
 </head>
 <body>
+	<!-- Facebook -->
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) return;
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/pt_BR/sdk.js#xfbml=1&version=v2.9";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));</script>
+	<!-- Fim Facebook -->
 	<!--Barras Governo/UFSM Acessibilidade -->
 	<div id="barra-brasil"></div>
 	<div id="barra-acessibilidade"></div>
@@ -164,12 +174,12 @@
 				</div>
 				<!-- Modulo Footer 1 -->
 				<div class="col-md-4 borda">
-						<jdoc:include type="modules" name="footer1"  style="xhtml"/>
+					<jdoc:include type="modules" name="footer1"  style="xhtml"/>
 				</div>
 				<!-- /.Modulo Footer 1 -->
 				<!-- Modulo Footer 2 -->
 				<div class="col-md-4">
-						<jdoc:include type="modules" name="footer2"  style="xhtml"/>
+					<jdoc:include type="modules" name="footer2"  style="xhtml"/>
 				</div>
 				<!-- /.Modulo Footer 2 -->
 			</div>
