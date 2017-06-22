@@ -5,34 +5,24 @@
 	<creationDate>Abril 2017</creationDate>
 	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
 	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
-	<version>17.6.13</version>
+	<version>17.6.22</version>
 	<description>Modulo para inclusão do logotipo na página.</description>
 	<files>
 		<filename module="mod_ufsm_logo">mod_ufsm_logo.php</filename>
 		<folder>tmpl</folder>
-		<folder>images</folder>
 		<filename>helper.php</filename>
 	</files>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
 				<!-- TEXTO -->
+				<field name="note0" type="note" class="alert alert-info" label="PARA INSERIR APENAS NOME PRINCIPAL, DEIXAR NOME SECUNDÁRIO EM BRANCO" description="" />
 				<field 
 					name="color_text" 
 					type="color" 
 					default="000000"
 					label="Cor da Fonte"
 					>
-				</field>
-				<field 
-					name="showSecundario"
-					type="radio"
-					label="Exibir nome secundário"
-					class="btn-group btn-group-yesno"
-					default="0"
-					>
-					<option value="1">JYES</option>
-					<option value="0">JNO</option>
 				</field>
 				<field 
 					name="nomePrincipal"
@@ -50,16 +40,6 @@
 					default=""
 					label="Nome Secundário"
 					description="Texto secundário ao lado do logo da UFSM"
-					rows="3"
-					cols="10"
-					showon="showSecundario:1"
-					>
-				</field>
-				<field 
-					name="paddingTop"
-					type="textarea"
-					default=""
-					label="Padding top"
 					rows="3"
 					cols="10"
 					>

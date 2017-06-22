@@ -12,12 +12,8 @@ defined('_JEXEC') or die;
 require_once __DIR__ . '/helper.php';
 
 $list = ModUFSMLogoHelper::getList($params);
-$nomeSecundario 	= $list->get('nomeSecundario');
-$nomePrincipal 	= $list->get('nomePrincipal');
-$nomeSubordinacao 	= $list->get('nomeSubordinacao');
-$showSecundario 	= $list->get('showSecundario');
-$paddingTop 	= $list->get('paddingTop');
 $color_text 	= $list->get('color_text');
-
+$nomePrincipal 	= $list->get('nomePrincipal');
+$nomeSecundario 	= $list->get('nomeSecundario');
 
 require JModuleHelper::getLayoutPath('mod_ufsm_logo');

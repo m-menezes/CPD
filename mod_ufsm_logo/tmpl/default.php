@@ -19,12 +19,18 @@ defined('_JEXEC') or die; ?>
 	<div class="col-sm-8 col-md-10 ufsmTexto">
 		<a href="<?php echo JUri::base(); ?>">
 			<h1 class="nomePrincipal">
-				<?php echo $nomePrincipal; ?>
+				<?php echo $nomePrincipal;
+				//Posicionamento do texto principal 
+				$paddingTop = 15;
+				?>
 			</h1>
 			<!-- MOSTRAR NOME SECUNDARIO -->
-			<?php if ($showSecundario == 1) :?>
+			<?php if (isset($nomeSecundario)) :?>
 				<h4 class="nomeSecundario">
-					<?php echo $nomeSecundario; ?>
+					<?php echo $nomeSecundario; 
+					//Se houver texto secundario remove o deslocamento
+					$paddingTop = 0;
+					?>
 				</h4>
 			<?php endif; ?>
 			<!-- MOSTRAR NOME SECUNDARIO -->
