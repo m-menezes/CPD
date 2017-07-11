@@ -5,7 +5,7 @@
 	<creationDate>Abril 2017</creationDate>
 	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
 	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
-	<version>17.6.13</version>
+	<version>17.6.27</version>
 	<description>Este módulo exibe um menu estilo bootstrap no site.</description>
 	<files>
 		<filename module="mod_cpd_menu">mod_cpd_menu.php</filename>
@@ -148,7 +148,7 @@
 					<field 
 						name="back_color_menu" 
 						type="color" 
-						default=""
+						default="005285"
 						label="Background Menu."
 						description="Cor do background do menu."
 						>
@@ -156,7 +156,7 @@
 					<field 
 						name="fonte_color_menu" 
 						type="color" 
-						default=""
+						default="ffffff"
 						description="Cor da fonte do Menu."
 						label="Fonte"
 						>
@@ -164,7 +164,7 @@
 					<field 
 						name="hover_color_menu" 
 						type="color" 
-						default=""
+						default="ffffff"
 						label="Hover Background"
 						description="Cor do hover e active do menu."
 						>
@@ -172,7 +172,7 @@
 					<field 
 						name="fonte_hover_menu" 
 						type="color" 
-						default=""
+						default="005285"
 						label="Hover Fonte"
 						description="Cor da fonte quando Mouseover Menu."
 						>
@@ -199,7 +199,7 @@
 					<field 
 						name="back_color_submenu" 
 						type="color" 
-						default=""
+						default="ffffff"
 						description="Cor do background do Sub-menu."
 						label="Background Sub-Menu."
 						>
@@ -207,7 +207,7 @@
 					<field 
 						name="fonte_color_submenu" 
 						type="color" 
-						default=""
+						default="005285"
 						description="Cor da fonte do Sub-menu."
 						label="Fonte"
 						>
@@ -215,7 +215,7 @@
 					<field 
 						name="fonte_hover_submenu" 
 						type="color" 
-						default=""
+						default="f08124"
 						description="Cor da fonte quando Mouseover Sub-menu."
 						label="Hover Fonte"
 						>

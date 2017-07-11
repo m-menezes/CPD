@@ -15,5 +15,6 @@ $list = ModCPDVisualHelper::getList($params);
 $logoURL = $params->get('logo');
 $background_link = $params->get('background_link');
 $margin_top = $params->get('margin_top');
+$altImg = $params->get('altImg');
 
 require JModuleHelper::getLayoutPath('mod_cpd_visual');

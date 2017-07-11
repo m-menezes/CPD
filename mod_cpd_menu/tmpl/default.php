@@ -51,8 +51,18 @@ defined('_JEXEC') or die;
 					else{
 						echo '<li>';
 					}
-					//Se tem filho
-					if($item->deeper && $item->level==2){
+					//Se tem filho e main menu
+					if($item->deeper && $item->level==1){
+						echo '<a href="'.$item->flink.'">';
+						if ($item->menu_image){
+							echo '<img src="' . $item->menu_image . '" alt="' . $item->id . '"></img>';
+						}
+						echo $item->title;
+						echo '<a class="hidden-lg iconMenu" href="#"><i class="fa fa-chevron-down" aria-hidden="true" style="float:right;"></i></a></a>';
+					//<i class="fa fa-plus" aria-hidden="true"></i>
+					}
+					//Se tem filho e é Submenu
+					else if($item->deeper && $item->level==2){
 						echo '<a href="'.$item->flink.'">';
 						if ($item->menu_image){
 							echo '<img src="' . $item->menu_image . '" alt="' . $item->id . '"></img>';
@@ -175,10 +185,10 @@ echo 'span.title{
 	color:'.$back_color_menu.'
 }';
 echo '.site-footer,
-	  .textVisual p,
-	  .right_mega,
+.textVisual p,
+.right_mega,
 	  #btn-busca {
-    background-color: '.$back_color_menu.';
+background-color: '.$back_color_menu.';
 
 }';
 echo'</style>';

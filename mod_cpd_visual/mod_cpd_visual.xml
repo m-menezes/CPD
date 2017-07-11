@@ -5,7 +5,7 @@
 	<creationDate>Junho 2017</creationDate>
 	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
 	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
-	<version>17.6.13</version>
+	<version>17.6.23</version>
 	<description>Modulo para inclusão da identidade visual do site</description>
 	<files>
 		<filename module="mod_cpd_visual">mod_cpd_visual.php</filename>
@@ -16,11 +16,28 @@
 		<fields name="params">
 			<fieldset name="basic">
 				<field 
+					name="background_link" 
+					type="color" 
+					default="005285"
+					label="Cor Background"
+					description="Cor do background do titulo"
+					>
+				</field>
+				<field 
 					name="margin_top" 
 					type="text" 
 					default="5px"
 					label="Margin Topo"
 					description="Margin Topo do Titulo"
+					>
+				</field>
+				<field 
+					name="altImg" 
+					type="textarea" 
+					default="Identidade Visual do Site"
+					label="Descrição para acessibilidade"
+					description="Tag(alt) adicionado a imagem, função acessibilidade."
+					rows="5"
 					>
 				</field>
 				<field name="logo" type="media" directory="" />

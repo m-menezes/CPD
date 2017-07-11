@@ -10,6 +10,7 @@
 	<files>
 		<filename module="mod_ufsm_logo">mod_ufsm_logo.php</filename>
 		<folder>tmpl</folder>
+		<folder>images</folder>
 		<filename>helper.php</filename>
 	</files>
 	<config>

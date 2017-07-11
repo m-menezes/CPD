@@ -12,28 +12,55 @@ defined('_JEXEC') or die; ?>
 		<?php 
 		// Loop pelos links ativos
 		for ($i=1; $i < 9; $i++) {
-			$link = $params->get('newLink'.$i);
-			$urllink = $params->get('linkURL'.$i);
-			if ($i == 1){
-				$link = 1;
+			/*RECEBER DADOS*/
+			$background = $params->get('right_mega'.$i);
+			$ativo = $params->get('newLink'.$i);
+			$texto = $params->get('linkText'.$i);
+			$url = $params->get('linkURL'.$i);
+			$icone = $params->get('linkIcon'.$i);
+			$imagem = $params->get('linkImage'.$i);
+			$alt = $params->get('linkAltImage'.$i);
+			/*SE POSSUI BACKGROUND*/
+			if ($background==1) {
+				$class = "right_mega";
 			}
-			if($link == 1){
-				$mega_link = $params->get('right_mega'.$i);
-				if($mega_link == 1)
-					$class = "right_mega";
-				else
-					$class="right_link";
-				echo '<li class="'.$class.'">';
-				echo '<i class="fa '.$params->get('linkIcon'.$i).'"></i>';
-				if(isset($urllink)){
-					echo '<a href="'.$urllink.'">';
-					echo $params->get('linkNome'.$i);
-					echo '</a>';
+			/*SE NÃO POSSUI BACKGROUND*/
+			else{
+				$class = "right_link";
+			}
+			/*SE ESTÁ ATIVO*/
+			if ($ativo==1) {
+				echo "<li class=".$class.">";
+				if(isset($icone)){
+					echo '<i class="fa '.$icone.'"></i>';
+				}
+				/*LINK ATIVO*/
+				if(isset($url)){
+					echo '<a href="'.$url.'">';
+				}
+				if(!isset($icone)){
+					echo '<span style="display:block">';	
 				}
 				else{
-					echo '<span>'.$params->get('linkNome'.$i).'</span>';
+					echo '<span>';
 				}
-				echo '</li>';
+				/*TEXTO*/
+				if (isset($texto)) {
+					echo $texto;
+				}
+				echo '</span>';
+				if (isset($imagem)) {
+					if(!isset($alt)){
+						$alt .= $texto;
+					}
+					echo '<img src="'.$imagem.'" alt="'.$alt.'" style="max-width:100%">';
+				}
+
+				/*TAG LINK ATIVO*/
+				if(isset($url)){
+					echo '</a>';
+				}
+				echo "</li>";
 			}
 		}
 		?>
@@ -43,7 +70,7 @@ defined('_JEXEC') or die; ?>
 	/*LINKS DIREITA UFSM*/
 	.right_list{
 		padding:0px;
-		margin: 0px;
+		margin: 0px 0px 8px 0px;
 	}
 	.right_mega > a:hover{
 		color:white;
@@ -52,7 +79,6 @@ defined('_JEXEC') or die; ?>
 	.right_list > li > span{
 		text-transform: uppercase;
 		position: relative;
-		top: -2px;
 	}
 	.right_list > li > i{
 		font-size: 20px;
@@ -67,16 +93,26 @@ defined('_JEXEC') or die; ?>
 		margin-bottom: 8px;
 	}
 	.right_mega i {
-		padding: 3px 5px 2px 6px;
+		padding: 3px 5px 5px 6px;
 	}
 	.right_link i{
 		padding-right: 5px; 
 		padding-left: 15px;
+		padding-bottom: 5px;
+		padding-top: 3px;
 	}
 	.right_mega a,
 	.right_mega i,
 	.right_mega span{
 		color:white;
 	}
+	.right_mega span{
+		padding: 3px 5px 3px 6px;
+	}
+	.right_link > a,
+	.right_link > span{
+		top:-2px;
+	}
+
 	/*FIM LINKS DIREITA UFSM*/
 </style>

@@ -14,7 +14,7 @@ defined('_JEXEC') or die; ?>
 			Identidade Visual
 		</p>
 	</div>
-	<img src="<?php echo $logoURL ?>">
+	<img src="<?php echo $logoURL ?>" alt="<?php echo $altImg ?>">
 </div>
 <style type="text/css">
 	.tituloIdentidade img{

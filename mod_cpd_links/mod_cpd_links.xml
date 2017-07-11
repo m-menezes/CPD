@@ -5,7 +5,7 @@
 	<creationDate>Junho 2017</creationDate>
 	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
 	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
-	<version>17.6.13</version>
+	<version>17.7.06</version>
 	<description>Modulo para inclusão de links no padrão UFSM</description>
 	<files>
 		<filename module="mod_cpd_links">mod_cpd_links.php</filename>
@@ -17,6 +17,16 @@
 			<fieldset name="basic">
 				<!-- TEXTO -->
 				<field name="note0" type="note" class="alert alert-info" label="Para inserir apenas texto deixe o label de URL em branco" description="" />
+				<field name="noteURL" type="note" class="alert alert-error" label="Icones são encontrados no site FontAwesome" description="http://fontawesome.io/icons/" />
+				<field name="newLink1" 
+					type="radio" 
+					default="0" 
+					label="Ativar link" 
+					description="" 
+					class="btn-group btn-group-yesno">
+					<option value="1">JYES</option>
+					<option value="0">JNO</option>
+				</field>
 				<field
 					name="right_mega1" 
 					type="checkbox" 
@@ -26,7 +36,7 @@
 					default="0">
 				</field>
 				<field 
-					name="linkNome1"
+					name="linkText1"
 					type="text"
 					default=""
 					label="Texto do Link">
@@ -37,18 +47,13 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon1" 
-					type="list"
+					type="text"
 					default="" 
-					label="Selecione um Icone"
-					description="">
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o">
 				</field>
+				<field name="linkImage1" label="Imagem" type="media" directory="" />
+				<field name="linkAltImage1" type="text" label="Texto Acessibilidade"></field>
 				<field name="note1" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 1 -->
 				<field name="newLink2" 
@@ -71,7 +76,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome2"
+					name="linkText2"
 					type="text"
 					default=""
 					showon="newLink2:1"
@@ -84,19 +89,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon2" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink2:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage2" label="Imagem" type="media" directory="" showon="newLink2:1"/>
+				<field name="linkAltImage2" type="text" label="Texto Acessibilidade" showon="newLink2:1"></field>
 				<field name="note2" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 2 -->
 				<field name="newLink3" 
@@ -119,7 +120,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome3"
+					name="linkText3"
 					type="text"
 					default=""
 					showon="newLink3:1"
@@ -132,19 +133,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon3" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink3:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage3" label="Imagem" type="media" directory="" showon="newLink3:1"/>
+				<field name="linkAltImage3" type="text" label="Texto Acessibilidade" showon="newLink3:1"></field>
 				<field name="note3" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 3 -->
 				<field name="newLink4" 
@@ -167,7 +164,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome4"
+					name="linkText4"
 					type="text"
 					default=""
 					showon="newLink4:1"
@@ -180,19 +177,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon4" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink4:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage4" label="Imagem" type="media" directory="" showon="newLink4:1"/>
+				<field name="linkAltImage4" type="text" label="Texto Acessibilidade" showon="newLink4:1"></field>
 				<field name="note4" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 4 -->
 				<field name="newLink5" 
@@ -215,7 +208,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome5"
+					name="linkText5"
 					type="text"
 					default=""
 					showon="newLink5:1"
@@ -228,19 +221,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon5" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink5:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage5" label="Imagem" type="media" directory="" showon="newLink5:1"/>
+				<field name="linkAltImage5" type="text" label="Texto Acessibilidade" showon="newLink5:1"></field>
 				<field name="note5" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 5 -->
 				<field name="newLink6" 
@@ -263,7 +252,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome6"
+					name="linkText6"
 					type="text"
 					default=""
 					showon="newLink6:1"
@@ -276,19 +265,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon6" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink6:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage6" label="Imagem" type="media" directory="" showon="newLink6:1"/>
+				<field name="linkAltImage6" type="text" label="Texto Acessibilidade" showon="newLink6:1"></field>
 				<field name="note6" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 6 -->
 				<field name="newLink7" 
@@ -311,7 +296,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome7"
+					name="linkText7"
 					type="text"
 					default=""
 					showon="newLink7:1"
@@ -324,19 +309,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon7" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink7:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage7" label="Imagem" type="media" directory="" showon="newLink7:1" />
+				<field name="linkAltImage7" type="text" label="Texto Acessibilidade" showon="newLink7:1"></field>
 				<field name="note7" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 7 -->
 				<field name="newLink8" 
@@ -359,7 +340,7 @@
 					>
 				</field>
 				<field 
-					name="linkNome8"
+					name="linkText8"
 					type="text"
 					default=""
 					showon="newLink8:1"
@@ -372,19 +353,15 @@
 					label="URL do Link">
 				</field>
 				<field name="linkIcon8" 
-					type="list" 
+					type="text" 
 					default="" 
 					showon="newLink8:1"
-					label="Selecione um Icone" 
+					label="Icone do Link"
+					description="Icones fontawesome para os links. Ex.: fa-id-card-o"
 					>
-					<option value="fa fa-envelope-open-o">Envelope Open</option>
-					<option value="fa fa-pencil-square-o">Pencil Square</option>
-					<option value="fa fa-check-square-o">Check Square</option>
-					<option value="fa fa-television">Television</option>
-					<option value="fa fa-tasks">Tasks</option>
-					<option value="fa fa-gavel">Gavel</option>
-					<option value="fa fa-link">Link</option>
 				</field>
+				<field name="linkImage8" label="Imagem" type="media" directory="" showon="newLink8:1"/>
+				<field name="linkAltImage8" type="text" label="Texto Acessibilidade" showon="newLink8:1"></field>
 				<field name="note8" type="note" class="alert alert-info" label=" " description="" />
 				<!-- FIM ELEMENTO 8 -->
 			</fieldset>

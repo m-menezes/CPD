@@ -6,6 +6,12 @@
 	box-shadow: inset none !important;
 	border:0px !important;
 }
+.iconMenu{
+	position: absolute;
+    margin-top: -36px;
+    height: 36px;
+    right: 0;
+}
 .navbar{
 	margin:0px !important;
 	min-height: initial !important;

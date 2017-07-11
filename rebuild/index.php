@@ -11,7 +11,7 @@
 <![endif]-->
 <!--[if gt IE 8]><!-->
 <!--<![endif]-->
-<html>
+<html lang=”pt-br”>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<meta name="author" content="CPD/UFSM" />
@@ -69,6 +69,9 @@
 				</div>
 				<!--/.Modulo Logo -->
 				<div class="col-sm-4 header-right">
+					<!-- Modulo Idioma -->
+					<jdoc:include type="modules" name="idioma"  style="xhtml"/>
+					<!-- ./Modulo Idioma -->
 					<!-- Busca -->
 					<div class="search_form hidden-xs">
 						<form class="navbar-form search_form" role="search" method="get" action="index.php/component/search/">
@@ -77,7 +80,9 @@
 						</form>
 					</div>
 					<!-- ./Busca -->
-					<jdoc:include type="modules" name="idioma"  style="xhtml"/>
+					<!-- Modulo Social -->
+					<jdoc:include type="modules" name="social"  style="xhtml"/>
+					<!-- ./Modulo Social -->
 				</div>
 			</div>
 		</div>
@@ -174,12 +179,16 @@
 				</div>
 				<!-- Modulo Footer 1 -->
 				<div class="col-md-4 borda">
-					<jdoc:include type="modules" name="footer1"  style="xhtml"/>
+					<div class="footer-widget">
+						<jdoc:include type="modules" name="footer1"  style="xhtml"/>
+					</div>
 				</div>
 				<!-- /.Modulo Footer 1 -->
 				<!-- Modulo Footer 2 -->
 				<div class="col-md-4">
-					<jdoc:include type="modules" name="footer2"  style="xhtml"/>
+					<div class="footer-widget">
+						<jdoc:include type="modules" name="footer2"  style="xhtml"/>
+					</div>
 				</div>
 				<!-- /.Modulo Footer 2 -->
 			</div>
@@ -210,7 +219,7 @@
 	<script src="<?php echo $this->baseurl ?>/templates/rebuild/assets/bootstrap/js/bootstrap.min.js"></script> 
 	<script src="<?php echo $this->baseurl ?>/templates/rebuild/assets/js/plugins.js"></script>
 	<script src="<?php echo $this->baseurl ?>/templates/rebuild/assets/js/contraste.js"></script>
-	<script src="<?php echo $this->baseurl ?>modules/mod_cpd_menu/assets/js/cbpHorizontalMenu.min.js"></script>
+	<script src="<?php echo $this->baseurl ?>/modules/mod_cpd_menu/assets/js/cbpHorizontalMenu.min.js"></script>
 	<!-- ./Importação Scripts -->
 	<!-- Inicialização do Menu -->
 	<script>

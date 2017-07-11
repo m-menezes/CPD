@@ -11,7 +11,7 @@ defined('_JEXEC') or die; ?>
 	<ul>
 		<?php if ($facebook==1): ?>
 			<li>
-				<?php echo '<a href="'.$facebook_url.'"><i class="fa fa-facebook" style="font-size:'.$icon_px.';"></i></a>';?>
+				<?php echo '<a href="'.$facebook_url.'"><i class="fa fa-facebook-square" style="font-size:'.$icon_px.';"></i></a>';?>
 			</li>
 		<?php endif ?>
 		<?php if ($twitter==1): ?>

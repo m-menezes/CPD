@@ -6,7 +6,7 @@
 	<creationDate>Abril 2017</creationDate>
 	<copyright>Copyright (C) 2017. All rights reserved.</copyright>
 	<authorEmail>m.silva@inf.ufsm.br</authorEmail>
-	<version>17.6.13</version>
+	<version>17.7.06</version>
 	<files>
 		<filename module="mod_cpd_social">mod_cpd_social.php</filename>
 		<folder>tmpl</folder>
