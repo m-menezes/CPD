@@ -83,14 +83,20 @@ ul.inside_menu,
 	border-color: #FFFFFF !important;
 }
 span.title {
-    color: #FF0 !important;
+	color: #FF0 !important;
 }
 .right_mega {
-    background: #2f2f2f !important;
+	background: #2f2f2f !important;
 }
 #barra-acessibilidade{
-    border-top: 0px;
+	border-top: 0px;
 }
 .textVisual p{
 	background: #2f2f2f!important;
+}
+.right_mega img{
+	background: #000000 !important;
+}
+ul.listnone.right_list > li > a > span {
+    color: #FF0 !important;
 }

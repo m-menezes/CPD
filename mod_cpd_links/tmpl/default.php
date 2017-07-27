@@ -113,6 +113,9 @@ defined('_JEXEC') or die; ?>
 	.right_link > span{
 		top:-2px;
 	}
+	.right_mega img{
+		background: white;
+	}
 
 	/*FIM LINKS DIREITA UFSM*/
 </style>

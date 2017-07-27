@@ -268,3 +268,6 @@ a:focus {
     color:white;
 }
 /*FIM LINKS DIREITA UFSM*/
+ul.nav.nav-tabs.nav-stacked > li {
+    float: left;
+}

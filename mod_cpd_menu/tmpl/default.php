@@ -184,13 +184,20 @@ echo '#cbp-hrmenu a {
 echo 'span.title{
 	color:'.$back_color_menu.'
 }';
-echo '.site-footer,
+
+/*MUDAR CORES SITE*/
+echo '
+.site-footer,
 .textVisual p,
 .right_mega,
-	  #btn-busca {
-background-color: '.$back_color_menu.';
-
+#btn-busca {
+	background-color: '.$back_color_menu.';
+}
+.iframeFacebook{
+	border:1px solid '.$back_color_menu.';
 }';
+
+
 echo'</style>';
 ?>
 <script>

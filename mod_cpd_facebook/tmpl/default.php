@@ -14,7 +14,7 @@ defined('_JEXEC') or die; ?>
 			Facebook
 		</p>
 	</div>
-	<div class="col-md-12 nopad" style="border:1px solid #CCC; margin-bottom: 10px;">
+	<div class="col-md-12 nopad iframeFacebook" >
 		<div class="fb-page" data-href="<?php echo $facebookURL ?>" data-tabs="<?php echo $publicacoes ?>" data-width="<?php echo $dataWidth ?>" data-height="<?php echo $dataHeight ?>" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true">
 			<blockquote cite="<?php echo $facebookURL ?>" class="fb-xfbml-parse-ignore">
 				<a href="https://www.facebook.com/facebook">Facebook</a>
@@ -27,6 +27,7 @@ defined('_JEXEC') or die; ?>
 		text-transform: uppercase;
 		color:white;
 		padding: 3px;
+		margin: 0px;
 	}
 	.textVisual i{
 		color:white;
@@ -34,5 +35,8 @@ defined('_JEXEC') or die; ?>
 	}
 	.visualTexto{
 		color:white;
+	}
+	.iframeFacebook{
+		margin-bottom: 10px;
 	}
 </style>
