@@ -140,8 +140,7 @@ echo '
 .cbp-hropen ,
 .cbp-hropen a,
 .cbp-hrmenu > ul > li.active a,
-.cbp-hrmenu > ul > li a:focus,
-.cbp-hrmenu > ul > li a:hover{
+.cbp-hrmenu > ul > li a:focus{
 	background:'.$hover_color_menu.';
 	color:'.$fonte_hover_menu.';
 }';

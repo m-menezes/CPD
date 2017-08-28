@@ -271,3 +271,11 @@ a:focus {
 ul.nav.nav-tabs.nav-stacked > li {
     float: left;
 }
+.pagination>ul>li {
+    float: left;
+    display: inline;
+    padding: 10px;
+}
+.pagination>ul {
+    margin: 35px;
+}

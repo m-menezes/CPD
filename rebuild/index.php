@@ -99,11 +99,11 @@
 		</div>
 	<?php endif; ?>
 	<!-- Com Container -->
-	<?php if ($this->countModules('top-container')) : ?>
-		<div class="top-container">
+	<?php if ($this->countModules('topo-container')) : ?>
+		<div class="topo-container">
 			<div class="container nopad">
 				<div class="col-md-12 nopad">
-					<jdoc:include type="modules" name="top-container"  style="xhtml"/>
+					<jdoc:include type="modules" name="topo-container"  style="xhtml"/>
 				</div>
 			</div>
 		</div>
