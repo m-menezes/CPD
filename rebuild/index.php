@@ -74,7 +74,7 @@
 					<!-- ./Modulo Idioma -->
 					<!-- Busca -->
 					<div class="search_form hidden-xs">
-						<form class="navbar-form search_form" role="search" method="get" action="index.php/component/search/">
+						<form class="navbar-form search_form" role="search" method="get" action="<?php echo $this->baseurl ?>/index.php/component/search/">
 							<input autofocus type="search" id="abusca" name="searchword" class="form-control search_form" placeholder="Buscar no site"/>
 							<button class='btn btn-small' id="btn-busca"><i class="fa fa-search"></i></button>
 						</form>
