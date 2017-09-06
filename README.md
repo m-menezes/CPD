@@ -1,11 +1,11 @@
 # Centro de Processamento de Dados
 
-Modulos para Joomla 3.x Universidade Federal de Santa Maria<br>
+Módulos para Joomla 3.x Universidade Federal de Santa Maria<br>
 
 ## Template
 Template - [Rebuild.zip](https://github.com/m-menezes/CPD/blob/master/rebuild/rebuild.zip)<br>
 
-## Modulos
+## Módulos
 [Links Laterais](https://github.com/m-menezes/CPD/blob/master/mod_cpd_links/mod_cpd_links.zip) - Position - Direita<br>
 [Logo UFSM Topo](https://github.com/m-menezes/CPD/blob/master/mod_ufsm_logo/mod_ufsm_logo.zip) - Position - Logo<br>
 [Facebook](https://github.com/m-menezes/CPD/blob/master/mod_cpd_facebook/mod_cpd_facebook.zip) - Position - Direita<br>
@@ -26,7 +26,7 @@ Selecione um Artigo: Mapa do Site<br>
 Na Aba "Tipo de Link" marque "Exibir no menu" a opção NÃO<br>
 
 ### Acessibilidade
-Necessario criado um artigo.<br>
+Necessário criado um artigo.<br>
 Titulo: Acessibilidade<br>
 Conteúdo:<br>
 ```html
